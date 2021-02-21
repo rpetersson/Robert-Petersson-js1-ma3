@@ -1,10 +1,8 @@
 url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating"
 
 async function callAPI(url) {
-    let html = []
     try {
         const resultsContainer = document.querySelector(".results");
-
         let response = await fetch(url);
         let data = await response.json();
         data = data["results"];
