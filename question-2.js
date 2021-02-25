@@ -9,9 +9,9 @@ async function callAPI(url) {
         resultsContainer.innerHTML = "";
         for (let i = 0; i <= 8; i++) {
 
-            let name = data[i].name
-            let rating = data[i].rating
-            let tags = data[i].tags.length
+            let name = data[i].name;
+            let rating = data[i].rating;
+            let tags = data[i].tags.length;
 
             resultsContainer.innerHTML += '<div>' + name + '<br>' + rating + '<br>' + tags + '</div>';
 
@@ -19,9 +19,9 @@ async function callAPI(url) {
 
     } catch (error) {
         console.log("An error occured");
-        console.log(error)
+        console.log(error);
     }
 }
 
-callAPI(url)
+callAPI(url);
 
